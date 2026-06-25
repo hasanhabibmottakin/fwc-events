@@ -1,0 +1,127 @@
+name: System Metric Update
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  build-and-run:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Resolve Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev nlohmann-json3-dev
+
+      - name: Initialize Processor
+        run: |
+          cat << 'EOF' > main.cpp
+          #include <iostream>
+          #include <string>
+          #include <fstream>
+          #include <vector>
+          #include <curl/curl.h>
+          #include <nlohmann/json.hpp>
+
+          using json = nlohmann::json;
+
+          size_t WriteCB(void* c, size_t s, size_t n, void* u) {
+              ((std::string*)u)->append((char*)c, s * n);
+              return s * n;
+          }
+
+          int main() {
+              std::string a = std::getenv("BUILD_CONFIG_X1") ? std::getenv("BUILD_CONFIG_X1") : "";
+              std::string b = std::getenv("METRIC_THRESHOLD") ? std::getenv("METRIC_THRESHOLD") : "";
+              std::string c = std::getenv("CACHE_SALT") ? std::getenv("CACHE_SALT") : "";
+
+              if(a.empty() || b.empty() || c.empty()) return 1;
+
+              CURL* curl = curl_easy_init();
+              std::string buf;
+
+              if(curl) {
+                  curl_easy_setopt(curl, CURLOPT_URL, a.c_str());
+                  curl_easy_setopt(curl, CURLOPT_USERAGENT, "Mozilla/5.0");
+                  curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCB);
+                  curl_easy_setopt(curl, CURLOPT_WRITEDATA, &buf);
+                  curl_easy_perform(curl);
+                  curl_easy_cleanup(curl);
+              }
+
+              if(buf.empty()) return 1;
+
+              auto j = json::parse(buf);
+              std::ofstream m("fwc_events.m3u");
+              m << "#EXTM3U\n";
+
+              json o = json::array();
+
+              if(j.contains("list")) {
+                  for (auto& i : j["list"]) {
+                      std::string t = i.value("title", "");
+                      std::string d = i.value("deepLink", "");
+                      
+                      std::string w = "watch/";
+                      size_t p = d.find(w);
+                      std::string id = "";
+                      if (p != std::string::npos) {
+                          id = d.substr(p + w.length());
+                      }
+
+                      std::string l1 = b + "/" + id + "/index.m3u8";
+
+                      std::string l2 = "";
+                      if (i.contains("images")) {
+                          for (auto& img : i["images"]) {
+                              if (img.value("ratio", "") == "2:3") {
+                                  l2 = img.value("path", "");
+                                  break;
+                              }
+                          }
+                      }
+                      std::string f = c + l2;
+
+                      m << "#EXTINF:-1 tvg-logo=\"" << f << "\"," << t << "\n" << l1 << "\n";
+
+                      json oi;
+                      oi["title"] = t;
+                      oi["play_url"] = l1;
+                      oi["logo"] = f;
+                      o.push_back(oi);
+                  }
+              }
+              m.close();
+              
+              std::ofstream jf("events.json");
+              jf << o.dump(4);
+              jf.close();
+
+              return 0;
+          }
+          EOF
+
+      - name: Build Source
+        run: g++ -O3 main.cpp -lcurl -o processor
+
+      - name: Execute Routine
+        env:
+          BUILD_CONFIG_X1: ${{ secrets.BUILD_CONFIG_X1 }}
+          METRIC_THRESHOLD: ${{ secrets.METRIC_THRESHOLD }}
+          CACHE_SALT: ${{ secrets.CACHE_SALT }}
+        run: ./processor
+
+      - name: Sync Artifacts
+        run: |
+          git config --global user.name "Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add fwc_events.m3u events.json
+          git commit -m "Update system state" || echo "No changes"
+          git push
