@@ -1,8 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/H6SY8p4BSYb9S18L8gb5/posters/5723bc1a-d2ad-4688-ba25-8bb0eb31656e.png",Tunisia v Netherlands | Rail
-https://candy.hasanhabibmottakin.workers.dev/9TTspp4Bb1O6C9k7yfhl/index.m3u8
-#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/IaSZ8p4BSYb9S18LcAbf/posters/922d0f2c-3c3f-46fa-b1df-60203474005f.png",Japan v Sweden | Rail
-https://candy.hasanhabibmottakin.workers.dev/RzT1pp4Bb1O6C9k7RvnM/index.m3u8
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/JKSa8p4BSYb9S18LowYF/posters/1d396a25-d5e5-4f30-b4a7-a1b298613155.png",Turkey v USA | Rail
 https://candy.hasanhabibmottakin.workers.dev/1__3pp4BObUt2AG6u0sF/index.m3u8
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/JqSb8p4BSYb9S18LTwZ-/posters/d24cc5a4-5c1f-4983-b01c-7d712250caeb.png",Paraguay v Australia | Rail
@@ -23,3 +19,7 @@ https://candy.hasanhabibmottakin.workers.dev/1__3pp4BObUt2AG6u0sF/index.m3u8
 https://candy.hasanhabibmottakin.workers.dev/zUGrjZ4BuUSiBsg_1BeE/index.m3u8
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/otbF_Z4BcJHlSPaojnj7/posters/0308e02c-6e4d-4446-b1e3-820862c226e2.png",Croatia v Ghana | Rail
 https://candy.hasanhabibmottakin.workers.dev/oDRWpp4Bb1O6C9k7We2Q/index.m3u8
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/o9bG_Z4BcJHlSPaoBHhX/posters/02d7ede9-6987-437e-a296-3f267de850fc.png",Colombia v Portugal | Rail
+https://candy.hasanhabibmottakin.workers.dev/9TTspp4Bb1O6C9k7yfhl/index.m3u8
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/pNbG_Z4BcJHlSPaoeHhp/posters/f20cedcd-ac28-4f2d-8910-15024ba04276.png",DR Congo v Uzbekistan | Rail
+https://candy.hasanhabibmottakin.workers.dev/RzT1pp4Bb1O6C9k7RvnM/index.m3u8
