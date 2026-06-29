@@ -57,9 +57,8 @@ jobs:
 
               if(a1.empty() || b.empty() || c.empty()) return 1;
 
-              std::string buf1, buf2;
+              std::string buf1;
               fetchUrl(a1, buf1);
-              if(!a2.empty()) fetchUrl(a2, buf2);
 
               if(!buf1.empty()) {
                   auto j = json::parse(buf1);
@@ -106,32 +105,51 @@ jobs:
                   jf.close();
               }
 
-              if(!buf2.empty()) {
-                  auto j2 = json::parse(buf2);
+              if(!a2.empty()) {
                   std::ofstream m2("fwc_events_highlight.m3u");
                   m2 << "#EXTM3U\n";
+                  int page = 1;
 
-                  if(j2.contains("list")) {
-                      for(auto& i : j2["list"]) {
-                          std::string t = i.value("title", "");
-                          std::string id = i.value("id", "");
-                          std::string l1 = b + "/" + id + "/index.mpd";
-                          
-                          std::string l2 = "";
-                          if (i.contains("images")) {
-                              for (auto& img : i["images"]) {
-                                  if (img.value("ratio", "") == "2:3") {
-                                      l2 = img.value("path", "");
-                                      break;
+                  while(true) {
+                      std::string url2 = a2;
+                      std::string separator = (a2.find('?') == std::string::npos) ? "?page=" : "&page=";
+                      url2 += separator + std::to_string(page);
+
+                      std::string buf2;
+                      fetchUrl(url2, buf2);
+
+                      if(buf2.empty()) break;
+
+                      try {
+                          auto j2 = json::parse(buf2);
+                          if(!j2.contains("list") || j2["list"].empty()) {
+                              break;
+                          }
+
+                          for(auto& i : j2["list"]) {
+                              std::string t = i.value("title", "");
+                              std::string id = i.value("id", "");
+                              std::string l1 = b + "/" + id + "/index.mpd";
+                              
+                              std::string l2 = "";
+                              if (i.contains("images")) {
+                                  for (auto& img : i["images"]) {
+                                      if (img.value("ratio", "") == "2:3") {
+                                          l2 = img.value("path", "");
+                                          break;
+                                      }
                                   }
                               }
-                          }
-                          std::string f = c + l2;
+                              std::string f = c + l2;
 
-                          m2 << "#KODIPROP:inputstream.adaptive.license_type=clearkey\n";
-                          m2 << "#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c\n";
-                          m2 << "#EXTINF:-1 tvg-logo=\"" << f << "\"," << t << "\n" << l1 << "\n";
+                              m2 << "#KODIPROP:inputstream.adaptive.license_type=clearkey\n";
+                              m2 << "#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c\n";
+                              m2 << "#EXTINF:-1 tvg-logo=\"" << f << "\"," << t << "\n" << l1 << "\n";
+                          }
+                      } catch(...) {
+                          break;
                       }
+                      page++;
                   }
                   m2.close();
               }
