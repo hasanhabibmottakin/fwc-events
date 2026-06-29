@@ -37,72 +37,104 @@ jobs:
               return s * n;
           }
 
-          int main() {
-              std::string a = std::getenv("BUILD_CONFIG_X1") ? std::getenv("BUILD_CONFIG_X1") : "";
-              std::string b = std::getenv("METRIC_THRESHOLD") ? std::getenv("METRIC_THRESHOLD") : "";
-              std::string c = std::getenv("CACHE_SALT") ? std::getenv("CACHE_SALT") : "";
-
-              if(a.empty() || b.empty() || c.empty()) return 1;
-
+          void fetchUrl(const std::string& url, std::string& out) {
               CURL* curl = curl_easy_init();
-              std::string buf;
-
               if(curl) {
-                  curl_easy_setopt(curl, CURLOPT_URL, a.c_str());
+                  curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
                   curl_easy_setopt(curl, CURLOPT_USERAGENT, "Mozilla/5.0");
                   curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCB);
-                  curl_easy_setopt(curl, CURLOPT_WRITEDATA, &buf);
+                  curl_easy_setopt(curl, CURLOPT_WRITEDATA, &out);
                   curl_easy_perform(curl);
                   curl_easy_cleanup(curl);
               }
+          }
 
-              if(buf.empty()) return 1;
+          int main() {
+              std::string a1 = std::getenv("BUILD_CONFIG_X1") ? std::getenv("BUILD_CONFIG_X1") : "";
+              std::string a2 = std::getenv("BUILD_CONFIG_X2") ? std::getenv("BUILD_CONFIG_X2") : "";
+              std::string b = std::getenv("METRIC_THRESHOLD") ? std::getenv("METRIC_THRESHOLD") : "";
+              std::string c = std::getenv("CACHE_SALT") ? std::getenv("CACHE_SALT") : "";
 
-              auto j = json::parse(buf);
-              std::ofstream m("fwc_events.m3u");
-              m << "#EXTM3U\n";
+              if(a1.empty() || b.empty() || c.empty()) return 1;
 
-              json o = json::array();
+              std::string buf1, buf2;
+              fetchUrl(a1, buf1);
+              if(!a2.empty()) fetchUrl(a2, buf2);
 
-              if(j.contains("list")) {
-                  for (auto& i : j["list"]) {
-                      std::string t = i.value("title", "");
-                      std::string d = i.value("deepLink", "");
-                      
-                      std::string w = "watch/";
-                      size_t p = d.find(w);
-                      std::string id = "";
-                      if (p != std::string::npos) {
-                          id = d.substr(p + w.length());
-                      }
+              if(!buf1.empty()) {
+                  auto j = json::parse(buf1);
+                  std::ofstream m("fwc_events.m3u");
+                  m << "#EXTM3U\n";
+                  json o = json::array();
 
-                      std::string l1 = b + "/" + id + "/index.m3u8";
+                  if(j.contains("list")) {
+                      for (auto& i : j["list"]) {
+                          std::string t = i.value("title", "");
+                          std::string d = i.value("deepLink", "");
+                          std::string w = "watch/";
+                          size_t p = d.find(w);
+                          std::string id = "";
+                          if (p != std::string::npos) {
+                              id = d.substr(p + w.length());
+                          }
 
-                      std::string l2 = "";
-                      if (i.contains("images")) {
-                          for (auto& img : i["images"]) {
-                              if (img.value("ratio", "") == "2:3") {
-                                  l2 = img.value("path", "");
-                                  break;
+                          std::string l1 = b + "/" + id + "/index.m3u8";
+                          std::string l2 = "";
+                          if (i.contains("images")) {
+                              for (auto& img : i["images"]) {
+                                  if (img.value("ratio", "") == "2:3") {
+                                      l2 = img.value("path", "");
+                                      break;
+                                  }
                               }
                           }
+                          std::string f = c + l2;
+
+                          m << "#EXTINF:-1 tvg-logo=\"" << f << "\"," << t << "\n" << l1 << "\n";
+
+                          json oi;
+                          oi["title"] = t;
+                          oi["play_url"] = l1;
+                          oi["logo"] = f;
+                          o.push_back(oi);
                       }
-                      std::string f = c + l2;
-
-                      m << "#EXTINF:-1 tvg-logo=\"" << f << "\"," << t << "\n" << l1 << "\n";
-
-                      json oi;
-                      oi["title"] = t;
-                      oi["play_url"] = l1;
-                      oi["logo"] = f;
-                      o.push_back(oi);
                   }
+                  m.close();
+
+                  std::ofstream jf("events.json");
+                  jf << o.dump(4);
+                  jf.close();
               }
-              m.close();
-              
-              std::ofstream jf("events.json");
-              jf << o.dump(4);
-              jf.close();
+
+              if(!buf2.empty()) {
+                  auto j2 = json::parse(buf2);
+                  std::ofstream m2("fwc_events_highlight.m3u");
+                  m2 << "#EXTM3U\n";
+
+                  if(j2.contains("list")) {
+                      for(auto& i : j2["list"]) {
+                          std::string t = i.value("title", "");
+                          std::string id = i.value("id", "");
+                          std::string l1 = b + "/" + id + "/index.mpd";
+                          
+                          std::string l2 = "";
+                          if (i.contains("images")) {
+                              for (auto& img : i["images"]) {
+                                  if (img.value("ratio", "") == "2:3") {
+                                      l2 = img.value("path", "");
+                                      break;
+                                  }
+                              }
+                          }
+                          std::string f = c + l2;
+
+                          m2 << "#KODIPROP:inputstream.adaptive.license_type=clearkey\n";
+                          m2 << "#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c\n";
+                          m2 << "#EXTINF:-1 tvg-logo=\"" << f << "\"," << t << "\n" << l1 << "\n";
+                      }
+                  }
+                  m2.close();
+              }
 
               return 0;
           }
@@ -114,6 +146,7 @@ jobs:
       - name: Execute Routine
         env:
           BUILD_CONFIG_X1: ${{ secrets.BUILD_CONFIG_X1 }}
+          BUILD_CONFIG_X2: ${{ secrets.BUILD_CONFIG_X2 }}
           METRIC_THRESHOLD: ${{ secrets.METRIC_THRESHOLD }}
           CACHE_SALT: ${{ secrets.CACHE_SALT }}
         run: ./processor
@@ -122,6 +155,6 @@ jobs:
         run: |
           git config --global user.name "Actions Bot"
           git config --global user.email "actions@github.com"
-          git add fwc_events.m3u events.json
+          git add fwc_events.m3u fwc_events_highlight.m3u events.json
           git commit -m "Update system state" || echo "No changes"
           git push
