@@ -1,6 +1,10 @@
 #EXTM3U
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/JlzUEp8Bb2xPfbxWXbaA/posters/ab59f266-cf29-4ea1-a8ac-0f382d9db8fa.jpeg",South Africa vs Canada | FIFA World Cup 26™ | Match 73 Highlights
+https://candy.hasanhabibmottakin.workers.dev/JlzUEp8Bb2xPfbxWXbaA/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/q2a_DZ8BnxRKiPhYL6xs/posters/0de25e04-5646-4971-8dac-490f14ddbc86.jpeg",Jordan vs Argentina | FIFA World Cup 26™ | Match 72 Highlights
 https://candy.hasanhabibmottakin.workers.dev/q2a_DZ8BnxRKiPhYL6xs/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
