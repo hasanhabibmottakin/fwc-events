@@ -33,5 +33,30 @@
         "logo": "https://assets-prod.services.toffeelive.com/CDhGDZ8B23Y4IFgzksit/posters/7d5f97b0-54db-4d87-a251-8ad030ccf51f.png",
         "play_url": "https://candy.hasanhabibmottakin.workers.dev/zUGrjZ4BuUSiBsg_1BeE/index.m3u8",
         "title": "England vs DR Congo | Rail"
+    },
+    {
+        "logo": "https://assets-prod.services.toffeelive.com/8TijEZ8B23Y4IFgzUs8F/posters/815033dc-d6b7-4062-97d3-536c52163819.png",
+        "play_url": "https://candy.hasanhabibmottakin.workers.dev/oDRWpp4Bb1O6C9k7We2Q/index.m3u8",
+        "title": "Belgium vs Senegal | Rail"
+    },
+    {
+        "logo": "https://assets-prod.services.toffeelive.com/8zijEZ8B23Y4IFgz7c8R/posters/901ee7d3-bfce-4da5-ba52-23f8cc5a9c4e.png",
+        "play_url": "https://candy.hasanhabibmottakin.workers.dev/9TTspp4Bb1O6C9k7yfhl/index.m3u8",
+        "title": "United States vs Bosnia and Herzegovina | Rail"
+    },
+    {
+        "logo": "https://assets-prod.services.toffeelive.com/cmakEZ8BnxRKiPhYqbIQ/posters/63df0e41-867c-4863-9d9e-7dec34fa28b5.png",
+        "play_url": "https://candy.hasanhabibmottakin.workers.dev/zUGrjZ4BuUSiBsg_1BeE/index.m3u8",
+        "title": "Spain vs Austria | Rail"
+    },
+    {
+        "logo": "https://assets-prod.services.toffeelive.com/dGalEZ8BnxRKiPhYErKg/posters/afc5dd5e-077f-4fc0-a8c4-c58844953e83.png",
+        "play_url": "https://candy.hasanhabibmottakin.workers.dev/oDRWpp4Bb1O6C9k7We2Q/index.m3u8",
+        "title": "Portugal vs Croatia | Rail"
+    },
+    {
+        "logo": "https://assets-prod.services.toffeelive.com/9zilEZ8B23Y4IFgzfM9z/posters/9adf194d-f819-498e-bb57-12ace57a0db0.png",
+        "play_url": "https://candy.hasanhabibmottakin.workers.dev/9TTspp4Bb1O6C9k7yfhl/index.m3u8",
+        "title": "Switzerland vs Algeria | Rail"
     }
 ]
