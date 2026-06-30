@@ -1,6 +1,14 @@
 #EXTM3U
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/vScEGJ8B-Ad-aJC_3eSP/posters/441f6714-1d84-4470-bbde-2190c0846821.jpeg",Brazil vs Japan | FIFA World Cup 26™ | Match 74 Highlights
+https://candy.hasanhabibmottakin.workers.dev/vScEGJ8B-Ad-aJC_3eSP/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/Ev4EGJ8BpeyY8kKc7pwh/posters/b34914c2-eb6d-4b3d-b44a-c7cc755e3432.jpeg",Germany vs Paraguay | FIFA World Cup 26™ | Match 75 Highlights
+https://candy.hasanhabibmottakin.workers.dev/Ev4EGJ8BpeyY8kKc7pwh/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/JlzUEp8Bb2xPfbxWXbaA/posters/ab59f266-cf29-4ea1-a8ac-0f382d9db8fa.jpeg",South Africa vs Canada | FIFA World Cup 26™ | Match 73 Highlights
 https://candy.hasanhabibmottakin.workers.dev/JlzUEp8Bb2xPfbxWXbaA/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
