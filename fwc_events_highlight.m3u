@@ -1,6 +1,14 @@
 #EXTM3U
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/ahoqIp8BBBDq2Mem5YbS/posters/75797a52-aad4-4e9e-b006-8e5b013b1249.jpeg",USA vs Bosnia and Herzegovina | FIFA World Cup 26™ | Match 82 Highlights
+https://candy.hasanhabibmottakin.workers.dev/ahoqIp8BBBDq2Mem5YbS/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/xigqIp8B-Ad-aJC_-Abo/posters/fed8a6ec-3936-44c6-8791-0f82b63cb45d.jpeg",Belgium vs Senegal | FIFA World Cup 26™ | Match 81 Highlights
+https://candy.hasanhabibmottakin.workers.dev/xigqIp8B-Ad-aJC_-Abo/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/0CjpIZ8B-Ad-aJC_hQWb/posters/e7ad8b95-c5f7-48dc-9c12-9b3fb4005cd1.jpeg",England vs DR Congo | FIFA World Cup 26™ | Match 80 Highlights
 https://candy.hasanhabibmottakin.workers.dev/0CjpIZ8B-Ad-aJC_hQWb/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
