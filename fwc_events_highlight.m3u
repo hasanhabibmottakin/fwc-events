@@ -1,8 +1,16 @@
 #EXTM3U
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/0CjpIZ8B-Ad-aJC_hQWb/posters/e7ad8b95-c5f7-48dc-9c12-9b3fb4005cd1.jpeg",England vs DR Congo | FIFA World Cup 26™ | Match 80 Highlights
+https://candy.hasanhabibmottakin.workers.dev/0CjpIZ8B-Ad-aJC_hQWb/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/ZSfZHJ8B-Ad-aJC_hvWS/posters/24331a8f-9429-4c0e-aad2-c211d6160bd9.jpeg",France vs Sweden | FIFA World Cup 26™ | Match 78 Highlights
 https://candy.hasanhabibmottakin.workers.dev/ZSfZHJ8B-Ad-aJC_hvWS/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/8hpuHZ8BBBDq2MemyH3F/posters/bf4b6487-7955-4061-9a8d-262311e0559b.jpeg",Côte d'Ivoire vs Norway | FIFA World Cup 26™ | Match 77 Highlights
+https://candy.hasanhabibmottakin.workers.dev/8hpuHZ8BBBDq2MemyH3F/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/E_4FGJ8BpeyY8kKcA5z2/posters/a49c96fc-beb2-4f79-ad57-f2bd57e92c70.jpeg",Netherlands vs Morocco | FIFA World Cup 26™ | Match 76 Highlights
