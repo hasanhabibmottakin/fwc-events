@@ -1,6 +1,18 @@
 #EXTM3U
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/ECjMJ58B-Ad-aJC_vBsN/posters/b1c10362-7378-4cdc-9b0e-8cac8251f52f.jpeg",Switzerland vs Algeria | FIFA World Cup 26™ | Match 85 Highlights
+https://candy.hasanhabibmottakin.workers.dev/ECjMJ58B-Ad-aJC_vBsN/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/9ijKJ58B-Ad-aJC_WBq5/posters/77bf818c-7440-4ced-b99e-4911d5a7e8da.jpeg",Portugal vs Croatia | FIFA World Cup 26™ | Match 84 Highlights
+https://candy.hasanhabibmottakin.workers.dev/9ijKJ58B-Ad-aJC_WBq5/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/xyjHJ58B-Ad-aJC_bBq5/posters/63aaac4b-072b-470e-ae59-9d560691b774.jpeg",Spain vs Austria | FIFA World Cup 26™ | Match 83 Highlights
+https://candy.hasanhabibmottakin.workers.dev/xyjHJ58B-Ad-aJC_bBq5/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/ahoqIp8BBBDq2Mem5YbS/posters/75797a52-aad4-4e9e-b006-8e5b013b1249.jpeg",USA vs Bosnia and Herzegovina | FIFA World Cup 26™ | Match 82 Highlights
 https://candy.hasanhabibmottakin.workers.dev/ahoqIp8BBBDq2Mem5YbS/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
