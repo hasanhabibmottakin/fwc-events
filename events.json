@@ -1,10 +1,5 @@
 [
     {
-        "logo": "https://assets-prod.services.toffeelive.com/9zilEZ8B23Y4IFgzfM9z/posters/14a193dc-f5a9-4745-b1a4-fca2357b8b9b.png",
-        "play_url": "https://candy.hasanhabibmottakin.workers.dev/9TTspp4Bb1O6C9k7yfhl/index.m3u8",
-        "title": "Switzerland vs Algeria | Rail"
-    },
-    {
         "logo": "https://assets-prod.services.toffeelive.com/DCc3F58B-Ad-aJC_YeHT/posters/7628d0d6-66e9-4bc2-b129-95dab3c81dbd.png",
         "play_url": "https://candy.hasanhabibmottakin.workers.dev/zUGrjZ4BuUSiBsg_1BeE/index.m3u8",
         "title": "Australia v Egypt | Rail"
@@ -18,5 +13,25 @@
         "logo": "https://assets-prod.services.toffeelive.com/W_45F58BpeyY8kKcSZmP/posters/385c6159-c460-4c11-92e4-0fb51a000baa.png",
         "play_url": "https://candy.hasanhabibmottakin.workers.dev/9TTspp4Bb1O6C9k7yfhl/index.m3u8",
         "title": "Colombia v Ghana | Rail"
+    },
+    {
+        "logo": "https://assets-prod.services.toffeelive.com/VyhuIp8B-Ad-aJC_zweF/posters/d53f9e5d-d43b-4a1c-b6c4-0eab5ae5c31e.png",
+        "play_url": "https://candy.hasanhabibmottakin.workers.dev/zUGrjZ4BuUSiBsg_1BeE/index.m3u8",
+        "title": "Canada VS Morocco | Rail"
+    },
+    {
+        "logo": "https://assets-prod.services.toffeelive.com/XShxIp8B-Ad-aJC_Kgff/posters/5c866062-f08d-411f-8ebd-51cac64d417b.png",
+        "play_url": "https://candy.hasanhabibmottakin.workers.dev/oDRWpp4Bb1O6C9k7We2Q/index.m3u8",
+        "title": "Paraguay VS France | Rail"
+    },
+    {
+        "logo": "https://assets-prod.services.toffeelive.com/4Bp6Ip8BBBDq2MemUYcS/posters/68ff2086-4720-4ad7-8a60-f55e241a68f6.png",
+        "play_url": "https://candy.hasanhabibmottakin.workers.dev/zUGrjZ4BuUSiBsg_1BeE/index.m3u8",
+        "title": "Brazil VS Norway | Rail"
+    },
+    {
+        "logo": "https://assets-prod.services.toffeelive.com/YSh7Ip8B-Ad-aJC_8gdE/posters/99101802-1d6c-4747-a6d1-118066950074.png",
+        "play_url": "https://candy.hasanhabibmottakin.workers.dev/oDRWpp4Bb1O6C9k7We2Q/index.m3u8",
+        "title": "Mexico VS England | Rail"
     }
 ]
