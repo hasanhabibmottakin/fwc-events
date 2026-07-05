@@ -1,6 +1,14 @@
 #EXTM3U
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/WChvMJ8B-Ad-aJC_2yMt/posters/dfcb3bdc-2249-4a8f-bcfd-fa3cafce0382.jpeg",Argentina vs Cabo Verde | FIFA World Cup 26™ | Match 87 Highlights
+https://candy.hasanhabibmottakin.workers.dev/WChvMJ8B-Ad-aJC_2yMt/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/HihsMJ8B-Ad-aJC_OCNz/posters/0e6e28c2-41a7-4634-ba1a-519d8bb25cf0.jpeg",Australia vs Egypt | FIFA World Cup 26™ | Match 86 Highlights
+https://candy.hasanhabibmottakin.workers.dev/HihsMJ8B-Ad-aJC_OCNz/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/ECjMJ58B-Ad-aJC_vBsN/posters/b1c10362-7378-4cdc-9b0e-8cac8251f52f.jpeg",Switzerland vs Algeria | FIFA World Cup 26™ | Match 85 Highlights
 https://candy.hasanhabibmottakin.workers.dev/ECjMJ58B-Ad-aJC_vBsN/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
