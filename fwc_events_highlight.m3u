@@ -1,6 +1,10 @@
 #EXTM3U
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/-ONkRp8BwGRsZ_KAE9rH/posters/12c96dcc-f239-4181-b1b9-09359139836d.jpeg",Switzerland vs Colombia | FIFA World Cup 26™ | Round of 16-8 | Match 96 Highlights
+https://candy.hasanhabibmottakin.workers.dev/-ONkRp8BwGRsZ_KAE9rH/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/DOPHP58BwGRsZ_KAiL86/posters/90f64fca-b734-49ca-a7cc-19ca793290c2.jpeg",Argentina vs Egypt | FIFA World Cup 26™ | Round of 16-7 | Match 95 Highlights
 https://candy.hasanhabibmottakin.workers.dev/DOPHP58BwGRsZ_KAiL86/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
