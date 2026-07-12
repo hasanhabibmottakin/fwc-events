@@ -1,6 +1,10 @@
 #EXTM3U
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/SorBVp8B0ChbBSbTQU48/posters/e816d726-299d-4ca5-9418-a7360000c1c9.jpeg",Argentina vs Switzerland | FIFA World Cup 26™ | Quarter-finals-4 | Match 100 Highlights
+https://candy.hasanhabibmottakin.workers.dev/SorBVp8B0ChbBSbTQU48/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/VQt4VZ8BrGzIZ7RIY7rw/posters/c550c052-1456-4db2-a563-2d9f87dec529.jpeg",Norway vs England | FIFA World Cup 26™ | Quarter-finals-3 | Match 99 Highlights
 https://candy.hasanhabibmottakin.workers.dev/VQt4VZ8BrGzIZ7RIY7rw/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
