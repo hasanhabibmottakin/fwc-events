@@ -1,6 +1,10 @@
 #EXTM3U
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/VQt4VZ8BrGzIZ7RIY7rw/posters/c550c052-1456-4db2-a563-2d9f87dec529.jpeg",Norway vs England | FIFA World Cup 26™ | Quarter-finals-3 | Match 99 Highlights
+https://candy.hasanhabibmottakin.workers.dev/VQt4VZ8BrGzIZ7RIY7rw/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/zKjKT58BNTJPT5caxqu8/posters/e2b149f9-c267-495b-aa07-fe872151d156.jpeg",Spain vs Belgium | FIFA World Cup 26™ | Quarter-finals-2 | Match 98 Highlights
 https://candy.hasanhabibmottakin.workers.dev/zKjKT58BNTJPT5caxqu8/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
