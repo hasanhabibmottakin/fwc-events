@@ -1,6 +1,10 @@
 #EXTM3U
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/p-y8aZ8B7udL1saI_oLr/posters/6e69c0f0-6d22-435b-a249-645f88909f58.jpeg",England vs Argentina | FIFA World Cup 26™ | Semi-finals 2 | Match 102 Highlights
+https://candy.hasanhabibmottakin.workers.dev/p-y8aZ8B7udL1saI_oLr/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/_jj7Y58BdfyVqUs11QCP/posters/25a03ae6-3593-48fe-a955-67ccfdba442e.jpeg", France vs Spain | FIFA World Cup 26™ | Semi-finals-1 | Match 101 Highlights
 https://candy.hasanhabibmottakin.workers.dev/_jj7Y58BdfyVqUs11QCP/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
