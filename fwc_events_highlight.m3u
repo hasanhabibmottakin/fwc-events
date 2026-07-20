@@ -1,6 +1,10 @@
 #EXTM3U
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
+#EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/6YJbfp8BJIOHmUelhq1R/posters/f6e1ebf7-7ce1-4d6d-a8e3-b85e452fdb86.jpeg",Spain vs Argentina | FIFA World Cup 26™ | Final | Match 104 Highlights
+https://candy.hasanhabibmottakin.workers.dev/6YJbfp8BJIOHmUelhq1R/index.mpd
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=5787385f9d02adc77ef51503323dd6c8:d9baa1a69ca5beee628d25d36ec67a3c
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/6UA4eZ8BtKdtaXzVPhZh/posters/aa48c9d7-7e89-4d66-865f-a89893a66544.jpeg",France vs England | FIFA World Cup 26™ | 3rd Position | Match 103 Highlights
 https://candy.hasanhabibmottakin.workers.dev/6UA4eZ8BtKdtaXzVPhZh/index.mpd
 #KODIPROP:inputstream.adaptive.license_type=clearkey
